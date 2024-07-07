@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+$grey-text:#787878;
+$black-text:#020A0A;
+$colorBody:#353535;
+$standardIndent:32px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #E6E6E6; 
+  }
+
+body{
+    display: flex;
+    min-height: 100dvh;
+
+    font-family:'Manrope';
+    font-size: 18px;
+    color: $black-text;
+    background-color: $colorBody;
+}
+
+.modal{
+    display: flex;
+    padding: $standardIndent;
+    padding-bottom: 52px;
+    margin: 50px;
+    background-color: white;
+    border-radius: 25px;
+    height: max-content;
+    width: 50%;
+    max-width: 933px;
+}
+
+.content{
+    display: flex;
+    gap: $standardIndent;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: $standardIndent;
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .description__item{
+            display: flex;
+            justify-content: space-between;
+            color: $grey-text;
+        }          
+        .kl{
+            color: $black-text;
+        }
+    }
+}
+
+.addPosition{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    flex-grow: 1;
+
+    .position-name{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .title{
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .wt{
+            color: $grey-text;
+        }
+    }
+
+    .options{
+        display: flex;
+        flex-direction: column;
+
+        .options-selection{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+
+            .option-selection__title{
+                font-weight: 700;
+            }
+            .options-selection__value{
+                color: $grey-text;
+                font-size: 16px;
+            }
+        }
+
+        .addOptions{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .addOptions__item{
+                display: flex;
+                justify-content: space-between;
+                padding: 12px;
+                column-gap: 40px;
+                row-gap: 8px;
+                flex-wrap: wrap;
+                background-color:#F6F7F8;
+        
+                .option{
+                    display: flex;
+                    gap: 8px;
+
+                    .item-price{
+                        color: $grey-text;
+                    }
+                }
+        
+                .counting{
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    gap: 20px;
+                    font-weight: 500;
+
+                    .decriment, .increment{
+                        border: none;
+                        background-color: #ffffff00;
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+
+    .addToBasket{
+        display: flex;
+        justify-content: space-between;
+
+        .itog-price{
+            font-size: 32px;
+            font-weight: 500;
+        }
+        .btnAdd{
+            padding: 20px 45px;
+            background-color: #DE341D;
+            color: white;
+            border-radius: 100px;
+            border: none;
+            font-size: 18px;
+        }
+    }
+}

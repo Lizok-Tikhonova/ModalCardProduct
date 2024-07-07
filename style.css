@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #E6E6E6;
+}
+
+body {
+  display: flex;
+  min-height: 100dvh;
+  font-family: "Manrope";
+  font-size: 18px;
+  color: #020A0A;
+  background-color: #353535;
+}
+
+.modal {
+  display: flex;
+  padding: 32px;
+  padding-bottom: 52px;
+  margin: 50px;
+  background-color: white;
+  border-radius: 25px;
+  height: -moz-max-content;
+  height: max-content;
+  width: 50%;
+  max-width: 933px;
+}
+
+.content {
+  display: flex;
+  gap: 32px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.info .description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.info .description .description__item {
+  display: flex;
+  justify-content: space-between;
+  color: #787878;
+}
+.info .description .kl {
+  color: #020A0A;
+}
+
+.addPosition {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  flex-grow: 1;
+}
+.addPosition .position-name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.addPosition .position-name .title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.addPosition .position-name .wt {
+  color: #787878;
+}
+.addPosition .options {
+  display: flex;
+  flex-direction: column;
+}
+.addPosition .options .options-selection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.addPosition .options .options-selection .option-selection__title {
+  font-weight: 700;
+}
+.addPosition .options .options-selection .options-selection__value {
+  color: #787878;
+  font-size: 16px;
+}
+.addPosition .options .addOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.addPosition .options .addOptions .addOptions__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 8px;
+  flex-wrap: wrap;
+  background-color: #F6F7F8;
+}
+.addPosition .options .addOptions .addOptions__item .option {
+  display: flex;
+  gap: 8px;
+}
+.addPosition .options .addOptions .addOptions__item .option .item-price {
+  color: #787878;
+}
+.addPosition .options .addOptions .addOptions__item .counting {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+}
+.addPosition .options .addOptions .addOptions__item .counting .decriment, .addPosition .options .addOptions .addOptions__item .counting .increment {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+}
+.addPosition .addToBasket {
+  display: flex;
+  justify-content: space-between;
+}
+.addPosition .addToBasket .itog-price {
+  font-size: 32px;
+  font-weight: 500;
+}
+.addPosition .addToBasket .btnAdd {
+  padding: 20px 45px;
+  background-color: #DE341D;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
